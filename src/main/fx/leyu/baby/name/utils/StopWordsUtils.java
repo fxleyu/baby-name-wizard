@@ -11,6 +11,8 @@ public class StopWordsUtils {
     static {
         STOP_WORDS_SET.add('，');
         STOP_WORDS_SET.add('。');
+        STOP_WORDS_SET.add('！');
+        STOP_WORDS_SET.add('？');
     }
 
     public static boolean isStopWord(Character character) {
