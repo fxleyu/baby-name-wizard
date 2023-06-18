@@ -14,9 +14,9 @@ import java.util.*;
  * @author zhuzhihui
  */
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         String content = "";
-        //content += parseShiJing();
+        content += parseShiJing();
         content += parseTangShi();
         content = ZhConverterUtil.toSimple(content);
         Map<Character, Integer> countMap = new HashMap<>();
