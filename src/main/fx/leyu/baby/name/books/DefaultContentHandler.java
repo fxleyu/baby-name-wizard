@@ -25,7 +25,6 @@ public class DefaultContentHandler<T> implements ContentHandler<T> {
         List<T> itemList = JSONArray.parseArray(str, clazz);
         StringBuilder builder = new StringBuilder();
         for (T t : itemList) {
-            System.out.println(JSON.toJSONString(t));
             builder.append(parser.parser(t));
         }
         return builder.toString();
